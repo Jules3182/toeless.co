@@ -1827,7 +1827,7 @@ abbr,acronym { border:0;
     animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
-    background-image: url(/images/pic15.JPG);
+    background-image: url(/images/pic15.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
