@@ -132,7 +132,7 @@
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		/*border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 		text-decoration: none;
 		color: inherit;
 	}
@@ -2080,3 +2080,33 @@ abbr,acronym { border:0;
 	100% { opacity: 0 }
 }
 /* Show at least something when animations not supported */
+
+
+
+
+.lb {
+	display: none;
+	position: fixed!important;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+  text-align:center;
+}
+
+.lb img {
+	max-width: 100%;
+	max-height: 80%;
+	margin-top: 20%;
+
+}
+
+.lb:target {
+	outline: none;
+	display: block;
+}
+
+a.lb:hover {cursor:default;}
+img:hover {cursor:pointer;}
