@@ -120,7 +120,7 @@
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #ffffff !important;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
