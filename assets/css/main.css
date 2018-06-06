@@ -127,7 +127,7 @@
 		line-height: 1.65;
 	}
 
-	a {
+	a:not(a.qwe) {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -2084,3 +2084,74 @@ abbr,acronym { border:0;
 
 
 
+dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: auto;
+    border: solid;
+    padding: 1em;
+    background: white;
+    color: black;
+    display: none;
+    opacity: 0;
+    border: none;
+}
+dialog[open] {
+    display: block;
+}
+.backdrop {
+    position: fixed;
+    background-color: rgba(0,0,0,0.1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@-webkit-keyframes fadeToNearBlack {
+  to { background: rgba(0,0,0,0.9); }
+}
+@keyframes fadeToNearBlack {
+  to { background: rgba(0,0,0,0.9); }
+}
+@-webkit-keyframes goBig {
+  to { opacity: 1; }
+}
+@keyframes goBig {
+  to { opacity: 1; }
+}
+body { min-height: 100vh; }
+
+nav#thumbs a {
+  display: block; flex: 1;
+}
+nav#thumbs a img {
+  width: 100%; height: auto;
+}
+dialog button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+dialog[open] {
+  -webkit-animation: goBig 1s .4s forwards;
+          animation: goBig 1s .4s forwards;
+  max-width: 700px;
+}
+dialog[open]::-webkit-backdrop {
+  -webkit-animation: fadeToNearBlack 1s forwards;
+          animation: fadeToNearBlack 1s forwards;
+}
+dialog[open]::backdrop {
+  -webkit-animation: fadeToNearBlack 1s forwards;
+          animation: fadeToNearBlack 1s forwards;
+}
+.backdrop {
+  -webkit-animation: fadeToNearBlack 1s forwards;
+          animation: fadeToNearBlack 1s forwards;
+}
+dialog img {
+  width: 100%; height: auto;
+}
