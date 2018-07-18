@@ -2155,3 +2155,10 @@ dialog[open]::backdrop {
 dialog img {
   width: 100%; height: auto;
 }
+
+
+
+.toe{
+    text-decoration: underline dotted;
+
+}
