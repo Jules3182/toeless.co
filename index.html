@@ -1,283 +1,110 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Toeless.co</title>
+    <head>
+        <title>Toeless.co</title>
     <meta charset="utf-8" />
-    <meta name="description" content="I’m a photographer based in West Hartford, Connecticut. All my life I’ve been interested in cameras, my mother gave me my first camera when I was 14 and it changed my life. For the first time I felt like I had a purpose and something I was good at, it made me want to strive to get better. Now that I’m 16 my mission with Toeless is to expand to reach my full potential.">
+    <meta name="description" content="The website of TOELESS.CO, a media company based in connecticut.">
     <meta name="keywords" content="Photography,Toeless,Toeless.co,Aarik,Googe-rochester,Pictures,Photos,Artsy">
     <meta name="author" content="Julian Baker, Aarik Googe-Rochester">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <noscript>
+            <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon"> </noscript>
-    <style>
-        #closecover {
-            color: black !important;
-        }
+    </head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
-        a {
-            color: white;
-        }
+.bgimg {
+    background-image: url('/images/pic34.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 
-        .thang {
-            text-decoration: none;
-        }
 
-        a:visited {
-            text-decoration: none;
-        }
-    </style>
-</head>
+    font-size: 25px;
+}
 
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
 <body>
-    <ul class="slideshow">
-        <li><span>Image 01</span></li>
-        <li><span>Image 02</span></li>
-        <li><span>Image 03</span></li>
-        <li><span>Image 04</span></li>
-        <li><span>Image 05</span></li>
-        <li><span>Image 06</span></li>
-    </ul>
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Header -->
-        <header id="header">
-            <div class="logo"> <span class="icon fa-camera-retro"></span> </div>
-            <div class="content">
-                <div class="inner">
-                    <h1>Welcome To TOELESS.co</h1>
-                    <p>Photography // Film </p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about" class="thang">The Team</a></li>
-                    <li><a href="#work" class="thang">Gallery</a></li>
-                    <li><a href="#media" class="thang">Media</a></li>
-                    <li><a href="#contact" class="thang">Contact</a></li>
-                    <!--<li><a href="#elements">Elements</a></li>-->
-                </ul>
-            </nav>
-        </header>
-        <!-- Main -->
-        <div id="main">
-            <!-- Intro -->
-            <article id="about">
 
+<div class="bgimg">
+  <div class="topleft">
+    <p>T O E L E S S . C O</p>
+  </div>
+  <div class="middle">
+    <h1 style="font-size:250%;">COMING SOON</h1>
+    <hr>
+    <h3 style="font-size:110%;" id="demo" ></h3>
+      <a href="home.html" class="button white" style="color:black;">continue</a>
 
-                <h2 class="major">About our team</h2>
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
 
-                <span class=""><img src="/images/pic16-min.jpg" width="33%" alt="" /><img src="/images/pic15-min.png" width="33%" alt="" /><img src="/images/pic14-min.png" width="33%" alt="" /></span>
-                <h3>Aarik Googe - <a style="color: purple">ceo // lead photograpger</a></h3>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 19, 2019 15:00:00").getTime();
 
-                <p> I'm Aarik Googe, CEO and lead Toeless photographer and film maker. My intrest in photography sprouted at a young age while film came later. My goal for toeless is to be world renown as an artist and entrepreneur.  </p>
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
 
-                <br>
+    // Get todays date and time
+    var now = new Date().getTime();
 
-                <h3>Julian Baker - <a style="color: purple">coo // LEad web designer</a></h3>
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
 
-                <p>I'm Julian Baker, head of web design on the Toeless team. I've been interested in code technology since 2010, and my interest has only grown since then. I've coded games, websites, addons, chrome extensions and more. Most of my code repositories are publicly hosted on my <a href="https://github.com/Jules3182">Github</a>. My goal with Toeless is to expand to new heights and prove myself to the world. </p>
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                <br>
-                <h3>Max Hanke - <a style="color: purple">Lead creative designer</a></h3>
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
 
-                <p>I'm Max Hanke, Lead Creative designer of toeless. I design as a hobby and I thoroughly enjoy pizza, painting, and film making with the team. I've been interested in design from the jump and im happy to be working on the Toeless team.</p>
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
 
-            </article>
-            <!-- Work -->
-            <article id="work">
-                <h2 class="major">Gallery</h2>
-                <div class="toolbar mb2 mt2">
-                    <button class="btn fil-cat" href="" data-rel="all">All</button>
-                    <button class="btn fil-cat" data-rel="photography">Photography</button>
-                    <button class="btn fil-cat" data-rel="graphics">Graphics</button>
-                    <button class="btn fil-cat" ><a class="thang" href="https://www.instagram.com/toeless.films/">Film</a></button>
-                </div>
-                <div id="portfolio">
-
-
-
-
-                    <nav id="thumbs">
-                        <a class="qwe" href="/images/pic1.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic1-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic3.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic3-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic4.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic4-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic13.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic13-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic2.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic2-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic14.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic14-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic10.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic10-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic15.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic15-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic18.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic18-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic21.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic21-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic24.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic24-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic25.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic25-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic26.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic26-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic27.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic27-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic30.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic30-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic31.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic31-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic32.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic32-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic33.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic33-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic34.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic34-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic35.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic35-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic36.jpg">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic36-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic37.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic37-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic38.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic38-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic39.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic39-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic40.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic40-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic41.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic41-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic42.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic42-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic43.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic43-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic44.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic44-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic45.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic45-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic47.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic47.JPG" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic48.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic48-min.png" alt="" /> </div>
-                        </a>
-
-
-                        <a class="qwe" href="/images/pic49.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic49-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic50.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic50-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic51.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic51-min.png" alt="" /> </div>
-                        </a>
-                        <a class="qwe" href="/images/pic52.JPG">
-                            <div class="tile scale-anm photography all"> <img src="/images/pic52-min.png" alt="" /> </div>
-                        </a>
-
-
-                    </nav>
-
-
-
-                    <dialog id="cover"> <img src="" alt>
-                        <button id="closecover">Close</button>
-                    </dialog>
-                    <script src='http://demosthenes.info/assets/scripts/extras/dialog-polyfill.js'></script>
-                    <div class="tile scale-anm graphics all"> <img src="/images/design1.png" alt="" /> </div>
-                    <div class="tile scale-anm graphics all"> <img src="/images/design2.jpg" alt="" /> </div>
-                </div>
-                <div style="clear:both;"></div>
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-            </article>
-            <!-- media -->
-            <article id="media">
-                <h2 class="major">Our Social Media</h2>
-                <p>Join the community discussion on our official <a class="toe" href="https://www.reddit.com/r/Toeless/">Reddit</a>, and check out all of the newest photos on our <a class="toe" href="https://www.instagram.com/toeless.co/">Instagram</a>! The latest 9 posts are shown below, enjoy!</p>
-                <br>
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                <iframe src="//lightwidget.com/widgets/ad07357116b35bd7aad9a434a8318738.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-                <ul class="icons">
-                    <p>Also check our our various other social media accounts linked below</p>
-                    <br>
-                    <li><a href="https://www.instagram.com/toeless.co/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-reddit"><span class="label">Reddit</span></a></li>
-                    <li><a href="#" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-                    <li><a href="#" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
-                </ul>
-                <br>
-                <h3>Have feedback? <a style="color: purple" href="#contact">Let us know!</a></h3>
-                <!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>--></article>
-            <!-- Contact -->
-            <article id="contact">
-                <h2 class="major">Contact Us</h2>
-                <form method="post" action="https://formspree.io/a.legend420@gmail.com">
-                    <div class="field half first">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" /> </div>
-                    <div class="field half">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" /> </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
-                    </div>
-                    <ul class="actions">
-                        <li>
-                            <input type="submit" value="Send Message" class="special" /> </li>
-                        <li>
-                            <input type="reset" value="Reset" /> </li>
-                    </ul>
-                </form>
-            </article>
-        </div>
-        <!-- Footer -->
-        <footer id="footer">
-            <p class="copyright">&copy; Toeless 2018. Design: <a href="https://github.com/Jules3182">Julian Baker</a>.</p>
-        </footer>
-    </div>
-    <!-- BG -->
-    <div id="bg"></div>
-    <!-- Scripts -->
+</script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
@@ -295,5 +122,4 @@
         gtag('config', 'UA-119880143-1');
     </script>
 </body>
-
 </html>
