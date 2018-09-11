@@ -18,7 +18,7 @@ var randomImages = (function(){
       var images = [
         '/images/pic49.JPG',
         '/images/pic47.JPG',
-        '/images/pic33.JPG',
+        '/images/pic33.jpg',
         '/images/pic25.JPG'
       ];
       // create style tag in head
