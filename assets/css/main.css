@@ -1853,8 +1853,9 @@ nav#thumbs a img {
 }
 
 .slideshow li:nth-child(1) span {
-    background-image: url(/images/pic50.JPG);
-
+    background-image: url(/images/pic24.jpg);
+    background-position: 50% 25%;
+    background-attachment: fixed;
 }
 
 .slideshow li:nth-child(2) span {
@@ -1869,7 +1870,7 @@ nav#thumbs a img {
 }
 
 .slideshow li:nth-child(3) span {
-    background-image: url(/images/pic35.JPG);
+    background-image: url(/images/pic61.JPG);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -1887,9 +1888,7 @@ nav#thumbs a img {
 }
 
 .slideshow li:nth-child(5) span {
-    background-image: url(/images/pic24.jpg);
-    background-position: 50% 25%;
-    background-attachment: fixed;
+    background-image: url(/images/pic50.JPG);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
