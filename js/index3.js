@@ -22,12 +22,12 @@ var randomImages = (function(){
     events: function(){
       /* random images snippet*/
       var images = [
-        '/images/hoco1.JPG',
-        '/images/hoco2.JPG',
-        '/images/hoco3.JPG',
-        '/images/hoco4.JPG',
-        '/images/hoco5.JPG',
-        '/images/hoco6.JPG',
+        '/images/hoco1.jpg',
+        '/images/hoco2.jpg',
+        '/images/hoco3.jpg',
+        '/images/hoco4.jpg',
+        '/images/hoco5.jpg',
+        '/images/hoco6.jpg',
       ];
       // create style tag in head
       var s = document.createElement('style');
